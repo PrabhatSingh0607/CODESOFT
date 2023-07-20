@@ -4,7 +4,7 @@ from tkinter import messagebox
 def add_task(task_list, task_entry):
     task = task_entry.get()
     if task:
-        task_list.insert(tk.END, task)
+        task_list.insert(tk.END, "• " + task)
         task_entry.delete(0, tk.END)
 
 def delete_task(task_list):
